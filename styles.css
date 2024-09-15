@@ -1,0 +1,1932 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  
+}
+body {
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .contact-navbar-socialmedia {
+    background-color: #2C0648; /* Color de fondo morado */
+    display: flex;
+    justify-content: space-between; /* Distribuir el espacio entre los elementos */
+    align-items: center;
+    padding: 10px 30px; /* Espaciado interno */
+    font-family: Arial, sans-serif;
+    color: white;
+    font-size: 14px;
+    flex-wrap: wrap; /* Para que sea responsive */
+    overflow: hidden;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.contact-info i {
+    margin-right: 8px; /* Espaciado entre el ícono y el texto */
+}
+
+.icon-phone-social-media i,
+.icon-email-social-media i,
+.icon-location-social-media i {
+    font-size: 22px; /* Tamaño de los íconos de contacto */
+}
+
+.contact-socialmedia-phone,
+.contact-socialmedia-email,
+.contact-socialmedia-location {
+    margin-left: 5px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px; /* Espacio entre los íconos de redes sociales */
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-links a i {
+    font-size: 20px; /* Tamaño de los íconos de redes sociales */
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover i {
+    color: #ddd; /* Cambia el color al pasar el mouse */
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+  .contact-navbar-socialmedia {
+      padding: 10px 15px; /* Ajusta el padding para dispositivos móviles */
+      flex-direction: row; /* Mantiene los elementos en fila (horizontal) */
+      justify-content: space-between; /* Mantiene los elementos distribuidos uniformemente */
+      flex-wrap: nowrap; /* No permite que los elementos se apilen en varias filas */
+  }
+
+  .contact-info {
+      display: flex;
+      align-items: center;
+      margin: 0; /* Elimina márgenes para una mejor organización horizontal */
+      flex-grow: 1;
+      justify-content: center; /* Centra los elementos horizontalmente */
+  }
+
+  .contact-info i {
+      margin-right: 5px; /* Mantiene un pequeño margen entre el ícono y el texto */
+  }
+
+  .social-links {
+      display: flex;
+      gap: 15px; /* Ajusta el espacio entre los íconos de redes sociales */
+      margin: 0;
+      justify-content: flex-end; /* Alinea las redes sociales a la derecha */
+      flex-grow: 1;
+  }
+
+  .social-links a i {
+      font-size: 18px; /* Ajusta el tamaño de los íconos en móviles */
+  }
+
+  .contact-socialmedia-phone,
+  .contact-socialmedia-email,
+  .contact-socialmedia-location {
+      margin: 0; /* Elimina márgenes para centrar todo bien horizontalmente */
+      text-align: center;
+  }
+  .icon-email-social-media {
+    display: none;
+  }
+}
+
+/*Header */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* Estilos básicos */
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.BKR-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.container-menu-logo {
+  height: 90px;
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.menu .navbar ul li  {
+  position: relative;
+  float: right;
+}
+.menu .navbar ul li a {
+  font-size: 18px;
+  padding: 20px;
+  color: black;
+  display: block;
+}
+#menu {
+  display: none;
+}
+.menu-icono{
+  width: 25px;
+}
+.menu label{
+  cursor: pointer;
+  display: none;
+}
+
+.whatsapp-icon {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4A035F; /* Color de fondo similar al de la imagen */
+  color: white;
+  border-radius: 30px; /* Borde redondeado */
+  padding: 10px 20px; /* Espaciado interno */
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  width: auto;
+}
+
+.whatsapp-icon img {
+  width: 20px; /* Ajusta el tamaño del ícono */
+  margin-right: 10px;
+}
+
+.whatsapp-icon:hover {
+  background-color: #660c7a; /* Color de fondo al pasar el cursor */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000000;
+}
+
+nav ul li a:hover {
+
+  color: #4c0f57;
+}
+
+/* Estilos responsivos */
+
+@media screen and (max-width: 900px) {
+  .menu {
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+  }
+  .menu label {
+    display: block; /* Mostrar el icono del menú en móviles */
+    cursor: pointer;
+  }
+  .menu .navbar {
+    position:fixed; /* Cambiar a fixed para que cubra toda la pantalla */
+    top: 20%; /* Debajo del botón del menú */
+    left: 0; /* Alineado a la izquierda */
+    width: 100%; /* Cubrir todo el ancho de la pantalla */
+    background-color: #fff; /* Fondo blanco */
+    display: none; /* Ocultar el menú por defecto */
+    z-index: 999;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  .menu .navbar ul {
+    flex-direction: column; /* Cambiar a columna para móviles */
+    width: 100%; /* Ancho completo */
+    margin: 0;
+    padding: 0;
+  }
+  .menu .navbar ul li {
+    width: 100%;
+    text-align: center; /* Centrar los elementos del menú */
+    padding: 15px 0; /* Espaciado entre los elementos del menú */
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .menu .navbar ul li a {
+    font-size: 20px; /* Aumentar tamaño de fuente para móviles */
+    font-weight: bold;
+    color: black; /* Color de texto negro */
+    display: block;
+    width: 100%;
+  }
+  #menu:checked ~ .navbar {
+    display: block; /* Mostrar el menú cuando se hace clic en el icono */
+  }
+  .whatsapp-icon {
+    display: none; /* Ocultar ícono de WhatsApp en móviles */
+  }
+}
+
+
+/*Hero seccion*/
+/* Estilos generales para la sección hero */
+.hero-section {
+  position: relative;
+  width: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Imagen de fondo de la sección hero */
+.hero-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1; /* Detrás de todo */
+}
+
+/* Overlay translúcido */
+#overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(25, 25, 25, 0.5); /* Capa gris translúcida */
+  z-index: 2; /* Encima de la imagen de fondo */
+}
+
+/* Canvas */
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3; /* Encima del overlay */
+}
+
+/* Contenido de la sección hero */
+.hero-content {
+  position: relative;
+  z-index: 4; /* Encima de todo lo demás */
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  max-width: 800px;
+  line-height: 1.2;
+}
+
+.hero-content button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.hero-content button:hover {
+  background-color: #4b0082;
+}
+
+/* Contenedor del texto */
+#text-container {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2; /* El texto está delante del avión cuando este está detrás */
+  text-align: center;
+  color: white;
+}
+
+.overlay-text {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff; /* Ajusta el color según sea necesario */
+}
+
+/* Animación del avión en forma de infinito */
+
+@keyframes fly-infinity {
+  0% {
+    transform: translateX(-100px) translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateX(0) translateY(100px) rotate(45deg);
+  }
+  50% {
+    transform: translateX(100px) translateY(0) rotate(90deg);
+  }
+  75% {
+    transform: translateX(0) translateY(-100px) rotate(135deg);
+  }
+  100% {
+    transform: translateX(-100px) translateY(0) rotate(180deg);
+  }
+}
+
+.airplane {
+  position: absolute;
+  width: 50px;  /* Ajusta el tamaño del avión */
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 50%; /* Posición inicial centrada */
+  left: 50%;
+  transform-origin: center;
+  z-index: 3;  /* Inicialmente detrás del texto */
+  animation: fly-infinity 10s linear infinite;
+}
+
+
+
+/*Nuestro servicio */
+.container-our-service {
+  background-image: linear-gradient(
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)),
+  url(./images/StockCake-Worker\ among\ containersTrabajador\ entre\ contenedores_1725319955.webp);
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  height: 350px;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-our-service-span,
+.container-our-service-p,
+.btn2 {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%) translateY(50px); /* Inicialmente desplazado */
+  opacity: 0; /* Oculto */
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+.scroll-active .container-our-service-span,
+.scroll-active .container-our-service-p,
+.scroll-active .btn2 {
+  transform: translateX(-50%) translateY(0); /* Se desplaza a su posición final */
+  opacity: 1; /* Aparece */
+}
+.container-our-service-span {
+  top: 20%;
+  font-size: 36px;
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.container-our-service-p {
+  top: 40%;
+  font-size: 16px;
+  width: 80%;
+  line-height: 1.5;
+}
+
+.btn2 {
+  top: 80%;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn2:hover {
+  background-color: #2C0648;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container-our-service {
+    height: 250px; /* Reduce la altura en pantallas más pequeñas */
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .container-our-service-span {
+    top: 15%;
+    font-size: 24px; /* Reduce el tamaño del texto principal */
+  }
+  
+  .container-our-service-p {
+    top: 35%;
+    font-size: 11px; /* Reduce el tamaño del párrafo */
+    width: 90%; /* Aumenta el ancho del texto para mejorar la legibilidad */
+  }
+  
+  .btn2 {
+    top: 75%; /* Ajusta la posición del botón */
+    padding: 8px 16px; /* Reduce el tamaño del botón */
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-our-service {
+    height: 200px; /* Reduce aún más la altura para pantallas muy pequeñas */
+  }
+
+  .container-our-service-span {
+    top: 10%;
+    font-size: 10px; /* Reduce más el tamaño del texto principal */
+  }
+  
+  .container-our-service-p {
+    top: 30%;
+    font-size: 9px; /* Reduce más el tamaño del párrafo */
+    width: 100%; /* Aumenta el ancho del texto para que ocupe toda la pantalla */
+  }
+  
+  .btn2 {
+    top: 70%; /* Ajusta la posición del botón */
+    padding: 6px 12px; /* Reduce más el tamaño del botón */
+    font-size: 12px;
+  }
+}
+/*Quienes somos */ 
+/* Sección de expertos */
+.custom-expert-section {
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.custom-content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+/* Contenedor de imagen */
+.custom-image-container {
+  width: 50%;
+}
+
+.custom-expert-image {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* Contenedor de texto */
+.custom-text-container {
+  width: 50%;
+  color: #4a5568; /* Gris oscuro */
+}
+
+.custom-heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #858585; /* Negro oscuro */
+}
+
+.custom-highlight {
+  color: #2C0648; /* Verde azulado */
+}
+
+.custom-paragraph {
+  font-size: 1.125rem;
+  margin-bottom: 15px;
+  line-height: 1.7;
+  color: #718096; /* Gris medio */
+  padding-left: 10%;
+}
+
+/* Botón personalizado */
+.custom-btn {
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 20%;
+  background-color: #e2e8f0; /* Gris claro */
+  color: #2C0648; /* Verde azulado */
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #cbd5e0; /* Gris más oscuro */
+}
+
+.custom-arrow {
+  margin-left: 10px;
+}
+/* Estilos responsive */
+@media (max-width: 1024px) {
+  .custom-content-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .custom-image-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .custom-expert-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .custom-text-container {
+    width: 100%; /* El texto ocupa todo el ancho */
+    padding: 10px;
+    
+  }
+
+  .custom-heading {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .custom-paragraph {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .custom-btn {
+    display: block; /* Asegura que el botón ocupe todo el ancho disponible */
+    margin: 20px ; /* Centramos el botón horizontalmente */
+    font-size: 14px;
+    padding: 8px 16px;
+    text-align: center; /* Asegura que el contenido del botón esté centrado */
+    
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-heading {
+    font-size: 24px;
+  }
+
+  .custom-paragraph {
+    font-size: 14px;
+  }
+
+  .custom-btn {
+    display: block; /* Asegura que el botón ocupe todo el ancho disponible */
+    margin: 20px auto; /* Centramos el botón horizontalmente */
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+/* Servicios*/
+
+.container-icon-service2 {
+  text-align: center;
+  margin-bottom: 5px;
+  padding-top: 40px;
+}
+
+.container-icon-service2 img {
+  width: 70px; 
+  height: auto;
+  text-align: center;
+}
+
+.container-text-service2 {
+  text-align: center;
+  margin: 0 auto;
+}
+.container-icon-service3{
+  text-align: center;
+
+ 
+}
+.container-text-service2 span {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #3c004c; /* Color morado */
+  margin: 0;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.container-text-service2 span::before,
+.container-text-service2 span::after {
+  content: '•';
+  margin: 0 10px;
+  color: #3c004c;
+}
+
+.container-text-service2 p {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/*servicios */
+.services {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f5f5f5; /* Color de fondo similar al de la imagen */
+    padding: 20px;
+}
+
+.service-item {
+    text-align: center;
+    width: 20%; /* Ajustar según sea necesario */
+    margin: 10px;
+    transform: translateX(-200px); /* Desplazado hacia la izquierda */
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out; /* Animación */
+}
+.service-item.show {
+  opacity: 1; /* Hace visible el elemento */
+  transform: translateX(0); /* Vuelve a su posición original */
+}
+
+.service-item-icon {
+    width: 50px; /* Ajustar tamaño del ícono */
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+.service-item:hover .service-item-icon {
+  transform: translateY(-20px); /* Mueve el ícono hacia arriba cuando el puntero se acerca */
+}
+
+.services-item-h3 {
+    color: #3a0073; /* Color morado similar al texto en la imagen */
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.services-item-p {
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+@media (max-width: 900px) {
+  .services {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si es necesario */
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.service-item {
+    text-align: center;
+    width: 45%; /* Ajusta el ancho para que quepan dos elementos por línea en pantallas más pequeñas */
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+  .service-item {
+      width: 100%; /* Hace que cada elemento ocupe toda la línea en pantallas pequeñas */
+  }
+}
+
+.service-item-icon {
+  width: 50px; 
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover .service-item-icon {
+  transform: translateY(-10px); 
+}
+
+.services-item-h3 {
+  color: #3a0073;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.services-item-p {
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Estilos generales para la sección contenedora */
+.container-AgenciamientoA {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 40px;
+  max-width: 1200px;
+
+}
+
+/* Estilo para cada contenedor individual con dimensiones fijas */
+.container-icon-AgenciamientoA, .container-icon-FletesI, .container-icon-FletesL {
+  text-align: center;
+  width: 300px; /* Ancho fijo de 300px */
+  height: 500px; /* Alto fijo de 572px */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0; /* Oculto inicialmente */
+  transform: translateY(30px); /* Desplazado ligeramente hacia abajo */
+  transition: transform 1s ease, opacity 1s ease, background-color 0.3s ease, color 0.3s ease; /* Agregado transición para el color */
+}
+.container-icon-AgenciamientoA.show, .container-icon-FletesI.show, .container-icon-FletesL.show {
+  opacity: 1;
+  transform: translateY(0); /* Vuelve a su posición original */
+}
+
+.container-icon-AgenciamientoA:hover, .container-icon-FletesI:hover, .container-icon-FletesL:hover {
+  transform: translateY(-20px);
+  background-color: #2C0648; /* Cambia el fondo al color deseado */
+  color: white; /* Cambia el texto a blanco */
+}
+
+.container-icon-AgenciamientoA img, .container-icon-FletesI img, .container-icon-FletesL img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.container-text-AgenciamientoA, .container-text-FletesI, .container-text-FletesL {
+  margin-bottom: 20px;
+}
+
+.container-text-AgenciamientoA span, .container-text-FletesI span, .container-text-FletesL span {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #4c237e;
+  margin-bottom: 10px;
+  transition: color 0.3s ease; 
+}
+
+.container-text-AgenciamientoA p, .container-text-FletesI p, .container-text-FletesL p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+  transition: color 0.3s ease; 
+}
+.container-icon-AgenciamientoA:hover .container-text-AgenciamientoA span, 
+.container-icon-FletesI:hover .container-text-FletesI span, 
+.container-icon-FletesL:hover .container-text-FletesL span,
+.container-icon-AgenciamientoA:hover .container-text-AgenciamientoA p, 
+.container-icon-FletesI:hover .container-text-FletesI p, 
+.container-icon-FletesL:hover .container-text-FletesL p {
+  color: white; /* Cambia el color del texto a blanco */
+}
+button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #333;
+}
+.container-icon-AgenciamientoA:hover button, 
+.container-icon-FletesI:hover button, 
+.container-icon-FletesL:hover button {
+  background-color: white;
+  color: #2C0648; /* Cambia el color del texto del botón al color del contenedor */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 900px) {
+  .container-AgenciamientoA {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .container-icon-AgenciamientoA, .container-icon-FletesI, .container-icon-FletesL {
+    width: 80%;
+    margin-bottom: 30px;
+    height: auto; /* Ajusta la altura para pantallas más pequeñas */
+  }
+
+  .container-text-AgenciamientoA, .container-text-FletesI, .container-text-FletesL {
+    text-align: center; /* Centra el texto en dispositivos móviles */
+  }
+
+  button {
+    display: block;
+    margin: 0 auto; /* Centra el botón */
+  }
+}
+
+/* Contenedor principal */
+/* Estilo para la sección contenedora */
+/* Estilo para la sección contenedora */
+.container-PolizasS {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px 20px 40px 20px;
+  max-width: 1200px;
+  
+}
+
+/* Estilo para cada contenedor individual con dimensiones fijas y desplazamiento inicial */
+.container-icon-PolizasS, .container-icon-LogisticaI, .container-icon-BusquedaP {
+  text-align: center;
+  width: 300px; /* Ancho fijo de 300px */
+  height: 500px; /* Alto fijo de 572px */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0; /* Ocultos inicialmente */
+  transform: translateY(60px); /* Desplazados más abajo para mayor efecto */
+  transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.8s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Cuando el contenedor entra en la vista */
+.container-icon-PolizasS.show, .container-icon-LogisticaI.show, .container-icon-BusquedaP.show {
+  opacity: 1;
+  transform: translateY(0); /* Vuelven a su posición original */
+}
+
+/* Estilos al hacer hover */
+.container-icon-PolizasS:hover, .container-icon-LogisticaI:hover, .container-icon-BusquedaP:hover {
+  transform: translateY(-10px);
+  background-color: #2C0648; /* Cambia el fondo al color deseado */
+  color: white; /* Cambia el texto a blanco */
+}
+
+/* Estilos para las imágenes dentro de los contenedores */
+.container-icon-PolizasS img, .container-icon-LogisticaI img, .container-icon-BusquedaP img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para los textos dentro de los contenedores */
+.container-text-PolizasS, .container-text-LogisticaI, .container-text-BusquedaP {
+  margin-bottom: 20px;
+  transition: color 0.3s ease; /* Transición suave para el color del texto */
+}
+
+.container-text-PolizasS span, .container-text-LogisticaI span, .container-text-BusquedaP span {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #4c237e;
+  margin-bottom: 10px;
+}
+
+.container-text-PolizasS p, .container-text-LogisticaI p, .container-text-BusquedaP p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.container-icon-PolizasS:hover .container-text-PolizasS span, 
+.container-icon-LogisticaI:hover .container-text-LogisticaI span, 
+.container-icon-BusquedaP:hover .container-text-BusquedaP span,
+.container-icon-PolizasS:hover .container-text-PolizasS p, 
+.container-icon-LogisticaI:hover .container-text-LogisticaI p, 
+.container-icon-BusquedaP:hover .container-text-BusquedaP p {
+  color: white; /* Cambia el color del texto a blanco */
+}
+/* Estilos para los botones */
+button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+.container-icon-PolizasS:hover button, 
+.container-icon-LogisticaI:hover button, 
+.container-icon-BusquedaP:hover button {
+  background-color: white;
+  color: #2C0648; /* Cambia el color del texto del botón al color del contenedor */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 900px) {
+  .container-PolizasS {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0 20px 0 20px;
+    
+  }
+
+  .container-icon-PolizasS, .container-icon-LogisticaI, .container-icon-BusquedaP {
+    width: 80%;
+    margin-bottom: 30px;
+    height: auto; /* Ajusta la altura para pantallas más pequeñas */
+  }
+  .container-text-PolizasS, .container-text-LogisticaI, .container-text-BusquedaP {
+    text-align: center; /* Centra el texto en dispositivos móviles */
+  }
+  button {
+    display: block;
+    margin: 0 auto; /* Centra el botón */
+  }
+}
+.container-ComprasE{
+  display: flex;
+  justify-content: center; 
+  padding: 20px 20px 40px 20px;
+}
+.container-icon-ComprasE {
+  text-align: center;
+  width: 300px; /* Ancho fijo de 300px */
+  height: 500px; /* Alto fijo de 572px */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+.container-icon-ComprasE:hover {
+  background-color: #2C0648; /* Cambia el fondo al color deseado */
+  color: white; /* Cambia el texto a blanco */
+  transform: translateY(-10px); /* Añade el efecto hover */
+}
+
+.container-icon-ComprasE img {
+  width: 80px; /* Ajuste del tamaño del ícono */
+  margin-bottom: 20px;
+}
+
+.container-text-ComprasE {
+  margin-bottom: 20px;
+}
+
+.container-text-ComprasE span {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #4c237e; /* Color púrpura del texto */
+  margin-bottom: 10px;
+  transition: color 0.3s ease; 
+}
+
+.container-text-ComprasE p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+  transition: color 0.3s ease; 
+}
+.container-icon-ComprasE:hover .container-text-ComprasE span, 
+.container-icon-ComprasE:hover .container-text-ComprasE p {
+  color: white; /* Cambia el color del texto a blanco */
+}
+
+button {
+  padding: 10px 30px; /* Botón más ancho */
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 25px; /* Botón redondeado */
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+
+button:hover {
+  background-color: #333;
+}
+.container-icon-ComprasE:hover button {
+  background-color: white;
+  color: #2C0648; /* Cambia el color del texto del botón al color del contenedor */
+}
+/* Estilo responsive */
+@media (max-width: 768px) {
+  .container-ComprasE {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    padding: 0 20px;
+  }
+  .container-icon-ComprasE {
+    width: 80%;
+    margin-bottom: 20px;
+    height: auto;
+  }
+  
+}
+/*Clientes */
+.clients-title {
+  text-align: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #3c004c; /* Color morado */
+  position: relative;
+  padding-bottom: 10px;
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.client-icon-container {
+  width: 100px; /* Puedes ajustar el ancho total de los contenedores si lo prefieres */
+  display: inline-block;
+  margin-right: 200px;
+  transition: transform 0.3s;
+  text-align: center; /* Centra las imágenes dentro de cada contenedor */
+}
+
+.client-icon-container img {
+  width: 200px; /* Ancho uniforme para todas las imágenes */
+  height: 200px; /* Alto uniforme para todas las imágenes */
+  object-fit: contain; /* Esto asegura que las imágenes se ajusten sin deformarse */
+}
+
+.client-icon-container:hover {
+  transform: scale(1.1);
+}
+
+/*Preguntas*/
+.faq-section {
+  background-image: linear-gradient(
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)),
+  url(./images/Leonardo_Phoenix_Create_a_highly_detailed_ultrarealistic_image_2.webp);
+  position: relative;
+  color: white;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  width: auto;
+  overflow: hidden; /* Asegura que el contenido no se salga del contenedor */
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  padding-left: 10%;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-align: left;
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: left;
+  padding-left: 10%;
+}
+
+.faq-question:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.faq-answer {
+  display: none;
+  padding: 10px 0;
+  font-size: 0.9em;
+  padding-left: 15%;
+}
+
+.faq-answer p {
+  margin: 0;
+}
+
+/*Contacto*/
+
+
+/*footer*/
+.footer {
+  background-color: white; /* Fondo blanco */
+  padding: 40px 0;
+  color: black; /* Texto negro */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  text-align: center;
+  width: 25%;
+}
+
+.footer-logo-image {
+  max-width: 100%;
+  height: 140px;
+}
+
+.footer-description {
+  display: flex;
+  font-size: 14px;
+  color: black;
+  padding-bottom: 20%;
+}
+
+.footer-links, .footer-contact, .footer-about {
+  width: 20%;
+}
+
+.footer-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+}
+.footer-title-ayuda {
+  margin-left: 40px;
+}
+
+.footer-links-list {
+  padding-top: 10px;
+  list-style-type: none;
+  margin-left: 40px;
+}
+
+.footer-link {
+  display: block;
+  margin-bottom: 8px;
+  text-decoration: none;
+  color: black;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-contact-item {
+  margin-bottom: 8px;
+  color: black;
+}
+
+.footer-about-description {
+  font-size: 14px;
+  color: black;
+}
+
+.fa {
+  margin-right: 8px;
+}
+
+.footer-bottom {
+  background-color: #2C0648;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 15px;
+}
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo {
+    width: 100%;
+  }
+  .footer-links,
+  .footer-contact,
+  .footer-about {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-description {
+    font-size: 12px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .footer-title {
+    font-size: 16px;
+  }
+
+  .footer-links-list {
+    margin-left: 0;
+  }
+
+  .footer-title-ayuda {
+    margin-left: 0;
+  }
+
+  .footer-link {
+    font-size: 14px;
+  }
+
+  .footer-contact-item {
+    font-size: 14px;
+  }
+
+  .footer-about-description {
+    font-size: 12px;
+  }
+
+  .footer-bottom {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-logo-image {
+    height: 100px;
+  }
+
+  .footer-title {
+    font-size: 14px;
+  }
+
+  .footer-link,
+  .footer-contact-item {
+    font-size: 12px;
+  }
+
+  .footer-about-description {
+    font-size: 12px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+}
+
+
+/*Servicios css*/
+/* General container styling */
+
+@media (max-width: 768px) {
+  .contact-navbar-socialmedia {
+      flex-wrap: wrap; /* Los elementos se mantienen en línea y se ajustan */
+      justify-content: center; /* Alinea todo en el centro en pantallas pequeñas */
+      padding: 10px; /* Espaciado adecuado */
+  }
+
+  .contact-info {
+      flex-wrap: wrap; /* Permite que el contenido se ajuste si es necesario */
+      justify-content: center;
+  }
+
+  .social-links {
+      gap: 15px; /* Ajusta el espacio entre los íconos para pantallas pequeñas */
+      justify-content: center;
+  }
+
+  .icon-phone-social-media i,
+  .icon-email-social-media i,
+  .icon-location-social-media i {
+      font-size: 14px; /* Ajuste de tamaño de íconos en pantallas pequeñas */
+  }
+
+}
+.WA_Chat_Widget *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px); /* Primer salto */
+  }
+  40% {
+    transform: translateY(0); /* Pausa después del primer salto */
+  }
+  60% {
+    transform: translateY(-20px); /* Segundo salto */
+  }
+  80% {
+    transform: translateY(0); /* Pausa después del segundo salto */
+  }
+  100% {
+    transform: translateY(-20px); /* Tercer salto */
+  }
+}
+
+.WA_Chat_Widget .WA_FloatingButton{
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.185);
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación */
+}
+.WA_Chat_Widget .WA_FloatingButton.jump {
+  animation: jump 1.5s ease; /* Duración total para 3 saltos */
+}
+.WA_Chat_Widget .WA_FloatingButton.stop-jump {
+  animation: none;
+}
+.WA_Chat_Widget .WA_FloatingButton svg{
+  width: 40px;
+  height: 40px;
+  fill: #4fce5d;
+}
+.WA_Chat_Widget .WA_FloatingButton:hover {
+  transform: scale(1.1); /* Efecto de agrandar */
+  box-shadow: 0 6px 15px 0px rgba(0, 0, 0, 0.3); /* Sombra más grande */
+}
+.WA_Chat_Widget[data-position^="top-"] .WA_FloatingButton{
+  top: 20px;
+}
+.WA_Chat_Widget[data-position^="bottom-"] .WA_FloatingButton{
+  bottom: 20px;
+}
+.WA_Chat_Widget[data-position$="-left"] .WA_FloatingButton{
+  left: 20px;
+}
+.WA_Chat_Widget[data-position$="-right"] .WA_FloatingButton{
+  right: 20px;
+}
+.WA_Chat_Widget[data-position$="-center"] .WA_FloatingButton{
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.WA_Chat_Widget[data-position^="top-"] .WA_ChatBox{
+  top: 110px;
+}
+.WA_Chat_Widget[data-position^="bottom-"] .WA_ChatBox{
+  bottom: 110px;
+}
+.WA_Chat_Widget[data-position$="-left"] .WA_ChatBox{
+  left: 30px;
+}
+.WA_Chat_Widget[data-position$="-right"] .WA_ChatBox{
+  right: 30px;
+}
+.WA_Chat_Widget[data-position$="-center"] .WA_ChatBox{
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.WA_Chat_Widget .WA_ChatBox{
+  position: fixed;
+  width: 360px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 5px 25px 0px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 2000; 
+  transition: opacity 0.4s ease, transform 0.4s ease; /* Animación al abrir */
+}
+
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Header{
+  width: auto;
+  background: #095e54;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Header .avatarBox{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Header .avatarBox img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Header .infoBox .name{
+  color: #fff;
+  font-weight: 600;
+}
+
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Header .infoBox .answer_time{
+  color: #e4e4e4;
+  font-size: 14px;
+}
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Header .WA_Close{
+  background: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Header .WA_Close svg{
+  fill: #ffff;
+}
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Body{
+  padding: 20px;
+  position: relative;
+}
+.WA_ChatBox_Body {
+  background: url(./images/fondo-whatsapp.jpeg) no-repeat center center;
+  background-size: cover; /* Esto asegura que la imagen de fondo cubra el área sin estirarse */
+  position: absolute;
+}
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Body::before{
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: url(./bg-pattern.png);
+  opacity: 0.1;
+  z-index: 0;
+}
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Body .message{
+  max-width: 280px;
+  background: #fff;
+  padding: 20px;
+  padding-top: 10px;
+  border-radius: 8px;
+  z-index: 1;
+  position: relative;
+}
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Body .message::before{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  left: -10px;
+  top: 0px;
+  border-radius: 3px;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Body .message .username{
+  color: darkgray;
+  font-weight: 500;
+}
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Body .message .message_content{
+  font-size: 14px;
+  color: #000;
+}
+
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Footer{
+  padding: 20px;
+  background-color: #fff;
+  width: 100%;
+}
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Footer .btn{
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 1000px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Footer .btn.btn-whatsapp{
+  background: #095e54;
+  color: #fff;
+  display: block;
+  text-align: center;
+}
+.section-contact {
+  display: flex;
+  height: 100vh;
+}
+
+.container-map {
+  width: 50%;
+}
+
+.map-frame {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.container-contact-form {
+  width: 50%;
+  background-color: #2C0648;
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.contact-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.container-contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-email, .contact-phone {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.icon-email, .icon-phone {
+  margin-right: 10px;
+}
+
+.contact-email-link {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-phone-number {
+  margin: 0;
+}
+
+.contact-form-instruction {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-name, .input-email, .input-phone, .input-message {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.input-message {
+  resize: vertical;
+  height: 100px;
+}
+
+.button-submit {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-submit {
+  margin-left: 10px;
+}
+
+.button-submit:hover {
+  background-color: #302b33;
+}
+@media (max-width: 768px) {
+  .section-contact {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .container-map{
+    width: 100%;
+    height: 50vh;
+  }
+  .container-contact-form {
+    width: 100%;
+    height: 80vh;
+  }
+
+  .container-contact-form {
+    padding: 20px;
+  }
+
+  .contact-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .contact-description {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .contact-form-instruction {
+    font-size: 14px;
+  }
+
+  .input-name, .input-email, .input-phone, .input-message {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .button-submit {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .map-frame {
+    height: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-title {
+    font-size: 24px;
+  }
+
+  .contact-description,
+  .contact-form-instruction {
+    font-size: 12px;
+  }
+
+  .input-name, .input-email, .input-phone, .input-message {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .button-submit {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .map-frame {
+    height: 40vh;
+  }
+}
+
+
+/*container 2*/
+.hero-section-container2 {
+  position: relative;
+  height: 100vh;
+  background-image: url('./images/venti-views-FPKnAO-CF6M-unsplash.png'); /* Aquí pones la ruta de tu imagen */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-section-container3 {
+  position: relative;
+  height: 100vh;
+  background-image: url('./images/frank-mckenna-tjX_sniNzgQ-unsplash\ 1.png'); /* Aquí pones la ruta de tu imagen */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Efecto de oscurecimiento */
+}
+
+.content2 {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+}
+
+.section-title2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.parraph-description {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  max-width: 800px;
+  text-align: left;
+}
+
+.btn-contact {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-contact:hover {
+  background-color: #333;
+}
+/*Por que deberian elegirnos*/
+.section-why-choose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.container-why-choose {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.text-box {
+  padding: 20px;
+}
+
+.heading-why-choose {
+  font-size: 2rem;
+  color: #4a148c; /* Color púrpura para el título */
+  margin-bottom: 10px;
+}
+
+.intro-text {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.list-reasons {
+  list-style: none;
+  padding-left: 0;
+}
+
+.reason-item {
+  margin-bottom: 20px;
+}
+
+.reason-title {
+  font-size: 1.1rem;
+  color: #000;
+}
+
+.reason-description {
+  font-size: 1rem;
+  color: #555;
+}
+
+.image-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-reason {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}

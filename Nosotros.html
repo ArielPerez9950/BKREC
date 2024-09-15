@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BKR</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <div style="position: absolute; top: 20px; right: 20px;">
+    <button onclick="changeLanguage()" style="padding: 10px 15px; font-size: 16px; background-color: #0044cc; color: white; border: none; border-radius: 5px; cursor: pointer;">
+      EN
+    </button>
+  </div>
+
+  <div class="contact-navbar-socialmedia">
+    <div class="contact-info icon-phone-social-media">
+      <i class="fas fa-phone"></i>
+      <span class="contact-socialmedia-phone">593-995057490</span>
+    </div>
+    <div class="contact-info icon-email-social-media">
+      <i class="fas fa-envelope"></i>
+      <span class="contact-socialmedia-email">katherin.legarda@bkrec.com</span>
+    </div>
+    <div class="contact-info icon-location-social-media">
+      <i class="fas fa-map-marker-alt"></i>
+      <span class="contact-socialmedia-location">QUITO-ECUADOR</span>
+    </div>
+    <div class="social-links">
+      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+  </div>
+
+  <header class="header-container">
+    <div class="container-menu">
+      <div class="BKR-logo-container">
+        <a href="index.html">
+          <img class="container-menu-logo" src="./images/LOGO1.jpeg" alt="Logo BKR">
+        </a>
+      </div>
+    </div>
+
+    <div class="container-menu-text">
+      <nav>
+        <ul class="menu-items">
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./Nosotros.html">Nosotros</a></li>
+          <li><a href="./servicios.html">Servicios</a></li>
+          <li><a href="./cotizacion.html">Cotización</a></li>
+        </ul>
+      </nav>
+
+      <div class="menu-icons">
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu-close-icon" onclick="toggleMenu()" style="display: none;">&#10005;</div>
+      </div>
+    </div>
+
+    <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-icon">
+      <img src="./svg/icons8-whatsapp (2).svg" alt="Contáctanos">
+      <span>Contáctanos</span>
+    </a>
+  </header>
+
+  <section class="hero-section-container2">
+    <div class="overlay2"></div>
+    <div class="content2">
+        <h1 class="section-title2">Sobre Nosotros</h1>
+        <p class="parraph-description">
+            En BKR, transformamos la complejidad de la logística aduanera en una experiencia ágil y sin estrés. 
+            Con años de experiencia en el sector, nuestro equipo de expertos se dedica a ofrecer soluciones personalizadas 
+            que se ajustan a las necesidades específicas de tu negocio. Nuestro compromiso con la eficiencia, la precisión y el cumplimiento normativo 
+            garantiza que tus operaciones internacionales se manejen con la máxima profesionalidad.
+        </p>
+        <a href="#" class="btn-contact">Contáctanos</a>
+    </div>
+</section>
+<div class="container-why-choose">
+  <div class="text-box">
+      <h2 class="heading-why-choose">¿Por qué deberías elegirnos?</h2>
+      <p class="intro-text">Hay muchas razones por las que deberías escogernos como su empresa de servicio de importación y exportación.</p>
+      <ul class="list-reasons">
+          <li class="reason-item">
+              <strong class="reason-title">Experiencia y conocimiento</strong><br>
+              <span class="reason-description">
+                  Nuestro equipo de expertos cuenta con años de experiencia en el sector de comercio exterior y está constantemente actualizado sobre las regulaciones y cambios en el ámbito aduanero.
+              </span>
+          </li>
+          <li class="reason-item">
+              <strong class="reason-title">Servicio integral</strong><br>
+              <span class="reason-description">
+                  Ofrecemos soluciones completas e integrales, desde el procesamiento de documentos hasta la logística y el seguimiento de la entrega.
+              </span>
+          </li>
+          <li class="reason-item">
+              <strong class="reason-title">Comunicación clara y constante</strong><br>
+              <span class="reason-description">
+                  Mantenemos una comunicación abierta y transparente con nuestros clientes, para entender sus necesidades y asegurarnos de cumplir con sus expectativas.
+              </span>
+          </li>
+      </ul>
+  </div>
+  <div class="image-box">
+      <img src="./images/Imagen-sobre-nosotros.png" alt="Trabajadores en puerto" class="image-reason">
+  </div>
+</div>
+<div class="section-contact">
+  <div class="container-map">
+    <!-- Inserta aquí el iframe de Google Maps -->
+    <iframe 
+      class="map-frame"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.9701913181584!2d-78.50342238458957!3d-0.16924179975406388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a998a93b017%3A0x162a5b0e07178e56!2sGaspar%20de%20Villarroel%20Y%20Jorge%20Drom!5e0!3m2!1ses!2sec!4v1693679878432!5m2!1ses!2sec"
+      width="100%" 
+      height="100%" 
+      frameborder="0" 
+      style="border:0;" 
+      allowfullscreen="" 
+      aria-hidden="false" 
+      tabindex="0">
+    </iframe>
+  </div>
+
+  <div class="container-contact-form">
+    <h1 class="contact-title">¡CONTÁCTANOS!</h1>
+    <p class="contact-description">Escríbenos un mensaje o llámanos a los siguientes medios de contacto.</p>
+    
+    <div class="container-contact-info">
+      <div class="contact-email">
+        <i class="icon-email fa fa-envelope"></i>
+        <a href="mailto:contacto@bkr.com" class="contact-email-link">
+          katherin.legarda@bkrec.com</a>
+      </div>
+      <div class="contact-phone">
+        <i class="icon-phone fa fa-phone"></i>
+        <p class="contact-phone-number">+593-995057490</p>
+      </div>
+    </div>
+
+    <p class="contact-form-instruction">Envíe su información en el siguiente formulario, le contestaremos de inmediato:</p>
+    
+    <form class="contact-form">
+      <input type="text" class="input-name" placeholder="Tu nombre:*" required>
+      <input type="email" class="input-email" placeholder="Correo electrónico:*" required>
+      <input type="tel" class="input-phone" placeholder="Teléfono:*" required>
+      <textarea class="input-message" placeholder="Escribir solicitud:*" required></textarea>
+      <button type="submit" class="button-submit">Enviar solicitud <i class="icon-submit fa fa-paper-plane"></i></button>
+    </form>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="./images/LOGO1.jpeg" alt="Logo de la empresa" class="footer-logo-image">
+      <p class="footer-description">Agencia de Aduanas y Trámites Aduaneros en Importaciones y Exportaciones</p>
+    </div>
+
+    <div class="footer-links">
+      <h3 class="footer-title">AYUDA</h3>
+      <ul class="footer-links-list">
+        <li><a href="#" class="footer-link">Inicio</a></li>
+        <li><a href="#" class="footer-link">Nosotros</a></li>
+        <li><a href="#" class="footer-link">Servicios</a></li>
+        <li><a href="#" class="footer-link">Cotizacion</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3 class="footer-title">CONTACTO</h3>
+      <p class="footer-contact-item"><i class="fa fa-phone"></i> +593-995057490</p>
+      <p class="footer-contact-item"><i class="fa fa-envelope"></i> katherin.legarda@bkrec.com</p>
+      <p class="footer-contact-item"><i class="fa fa-map-marker"></i> Gaspar de Villarroel y Jorge Drom, Quito-Ecuador</p>
+    </div>
+
+    <div class="footer-about">
+      <h3 class="footer-title">SOBRE NOSOTROS</h3>
+      <p class="footer-about-description">
+        Agencia de Aduanas
+      </p>
+    </div>
+  </div>
+  <script src="three.js"></script>
+  <script src="app.js"></script>
+  <script>
+    function changeLanguage() {
+        window.location.href = "/en"; // Cambia esto a la URL de la versión en inglés de tu página
+    }
+</script>
+</footer>
+<div class="footer-bottom">
+  <p>Copyright © 2024 BKR Diseñado por Ariel Pérez</p>
+</div>
+<div class="WA_Chat_Widget" data-position="bottom-right">
+  <div class="WA_ChatBox">
+      <div class="WA_ChatBox_Header">
+          <div class="avatarBox">
+              <img src="./images/LOGO1.jpeg" alt="Chat Avatar">
+          </div>
+          <div class="infoBox">
+              <h4 class="name">BKR</h4>
+              <span class="answer_time">Logistica Aduanera</span>
+          </div>
+          <button class="WA_Close" onclick="hideChatbox()"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                  viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                      d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z" />
+              </svg></button>
+      </div>
+      <div class="WA_ChatBox_Body">
+          <div class="message">
+              <h4 class="username">BKR</h4>
+              <div class="message_content">
+                  <p>¡Hola! ¿En que podemos ayudarte? 😊</p>
+              </div>
+          </div>
+      </div>
+      <div class="WA_ChatBox_Footer">
+          <a class="btn btn-whatsapp" href="http://wa.me/92123435464" target="_blank">Cotiza con nosotros</a>
+      </div>
+  </div>
+  <div class="WA_FloatingButton" onclick="toggleChatbox()">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="#4FCE5D" viewBox="0 0 90 90">
+          <path
+              d="M90 43.841c0 24.213-19.779 43.841-44.182 43.841a44.256 44.256 0 01-21.357-5.455L0 90l7.975-23.522a43.38 43.38 0 01-6.34-22.637C1.635 19.628 21.416 0 45.818 0 70.223 0 90 19.628 90 43.841zM45.818 6.982c-20.484 0-37.146 16.535-37.146 36.859 0 8.065 2.629 15.534 7.076 21.61L11.107 79.14l14.275-4.537A37.122 37.122 0 0045.819 80.7c20.481 0 37.146-16.533 37.146-36.857S66.301 6.982 45.818 6.982zm22.311 46.956c-.273-.447-.994-.717-2.076-1.254-1.084-.537-6.41-3.138-7.4-3.495-.993-.358-1.717-.538-2.438.537-.721 1.076-2.797 3.495-3.43 4.212-.632.719-1.263.809-2.347.271-1.082-.537-4.571-1.673-8.708-5.333-3.219-2.848-5.393-6.364-6.025-7.441-.631-1.075-.066-1.656.475-2.191.488-.482 1.084-1.255 1.625-1.882.543-.628.723-1.075 1.082-1.793.363-.717.182-1.344-.09-1.883-.27-.537-2.438-5.825-3.34-7.977-.902-2.15-1.803-1.792-2.436-1.792-.631 0-1.354-.09-2.076-.09s-1.896.269-2.889 1.344c-.992 1.076-3.789 3.676-3.789 8.963 0 5.288 3.879 10.397 4.422 11.113.541.716 7.49 11.92 18.5 16.223C58.2 65.771 58.2 64.336 60.186 64.156c1.984-.179 6.406-2.599 7.312-5.107.9-2.512.9-4.663.631-5.111z">
+          </path>
+      </svg>
+  </div>
+</div>
+<script>
+  let isChatboxVisible = false;
+  const chatbox = document.querySelector(".WA_Chat_Widget .WA_ChatBox");
+  function hideChatbox() {
+      isChatboxVisible = false;
+      chatbox.style.display = "none";
+  }
+
+  function toggleChatbox() {
+      isChatboxVisible = !isChatboxVisible;
+      chatbox.style.display = isChatboxVisible ? "block" : "none";
+  }
+  document.addEventListener('DOMContentLoaded', function() {
+    const floatingButton = document.querySelector('.WA_FloatingButton');
+    const chatBox = document.querySelector('.WA_ChatBox');
+    let isChatOpen = false;
+
+    // Función para hacer saltar el botón
+    function makeButtonJump() {
+      // Solo añadir la clase de salto si el chat está cerrado
+      if (!isChatOpen) {
+        floatingButton.classList.add('jump');
+        
+        // Eliminar la clase después de que la animación termine para reiniciar el ciclo
+        setTimeout(() => {
+          floatingButton.classList.remove('jump');
+        }, 1500); // Duración total de la animación (1500ms en este caso)
+      }
+    }
+
+    // Función para abrir el cuadro de chat
+    function openChatBox() {
+      chatBox.style.display = 'block'; // Mostrar el cuadro de chat
+      isChatOpen = true; // Marcar el chat como abierto
+      floatingButton.classList.add('stop-jump'); // Detener la animación
+    }
+
+    // Función para cerrar el cuadro de chat
+    function closeChatBox() {
+      chatBox.style.display = 'none'; // Ocultar el cuadro de chat
+      isChatOpen = false; // Marcar el chat como cerrado
+      floatingButton.classList.remove('stop-jump'); // Reanudar la animación
+    }
+
+    // Manejar el clic en el botón de WhatsApp
+    floatingButton.addEventListener('click', () => {
+      if (!isChatOpen) {
+        openChatBox();
+      } else {
+        closeChatBox();
+      }
+    });
+
+    // Hacer saltar el botón cada 7 segundos
+    setInterval(makeButtonJump, 7000); // 7000ms = 7s
+  });
+
+
+</script>
+</body>
+
+</html>
